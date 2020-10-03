@@ -1,0 +1,11 @@
+.showcase {
+  background: url('../img/main.jpg') bottom center/cover no-repeat;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  .ctx {
+    width: 45%;
+    padding-left: 30px;
+  }
+}

@@ -1,0 +1,21 @@
+.about {
+  min-height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-wrapper {
+  width: calc(100% - 4 * (100% / 12));
+  margin: 50px 0;
+}
+.about-container {
+  text-align: center;
+}
+.about-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: $grey;
+}
+.about-text {
+  color: $middle-grey;
+}

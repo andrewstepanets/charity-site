@@ -1,0 +1,219 @@
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .showcase {
+    background: url('../img/main@2x.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+  }
+  .join-us-img-container {
+    background: url('../img/join-us@2x.jpg') no-repeat;
+    background-size: cover;
+    background-position: right center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .btn-menu {
+    display: block;
+    margin-left: 10px;
+    height: 40px;
+  }
+  .navbar-nav {
+    display: none;
+  }
+  .mobile-menu-block {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow-y: scroll;
+    z-index: 999;
+    background: $light-blue;
+  }
+  .menu-block-content {
+    padding: 25px 0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-close-menu {
+    display: block;
+    width: 18px;
+    height: 19px;
+    margin: 10px auto 20px;
+    background: url('../img/btn-close-menu-x2.png');
+    background-size: 18px 19px;
+    text-indent: -9999px;
+  }
+  .mobile-nav {
+    .mobile-nav-link {
+      display: block;
+      padding: 0.5rem 0.35rem;
+      font-size: 2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: $dark-grey;
+      border-bottom: 5px solid transparent;
+      &:hover {
+        color: $light-blue;
+      }
+    }
+  }
+  .mobile-drop-down {
+    display: none;
+  }
+  .mobile-dropdown-link {
+    display: flex;
+    justify-content: center;
+    a {
+      color: $dark-grey;
+    }
+  }
+  .menu-block-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-list {
+    width: 80%;
+    li {
+      padding: 30px 0;
+      border-bottom: 1px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    li:last-child {
+      border-color: transparent;
+    }
+    h2 {
+      font-size: 4rem;
+      font-weight: 900;
+      color: white;
+    }
+    a {
+      color: $dark-grey;
+    }
+  }
+  .title {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .info-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .icon-container {
+    flex-basis: 30%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    min-width: 320px;
+  }
+  .logo-img {
+    display: none;
+  }
+  .logo-img-mobile {
+    display: inline-block;
+  }
+  .showcase {
+    min-height: 500px;
+  }
+  .contact-list {
+    li {
+      padding: 30px 0;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 30px 0;
+  }
+  .info-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+  }
+  .btn-brown {
+    background: $light-brown;
+    border-bottom: 5px solid $dark-brown;
+  }
+  .btn-blue {
+    background: $light-blue;
+    border-bottom: 5px solid $dark-cyan;
+  }
+  .underline {
+    border-bottom: 3px solid $light-blue;
+    padding-bottom: 10px;
+  }
+  .age {
+    min-height: 400px;
+  }
+  .slider {
+    height: 447px;
+  }
+  .slider-wrapper {
+    height: 378px;
+  }
+  .slider-container {
+    width: 484px;
+    left: calc(50% - 242px);
+  }
+  .join-us {
+    min-height: 340px;
+  }
+  .join-us-img-container {
+    display: none;
+  }
+  .join-us-cta {
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .icon-container {
+    flex-basis: 100%;
+  }
+  .age {
+    min-height: 300px;
+  }
+  .age-wrapper {
+    margin-top: 35px;
+    width: calc(100% - 2 * (100% / 12));
+  }
+  .slider {
+    height: 240px;
+  }
+  .slider-wrapper {
+    height: 204px;
+  }
+  .slider-container {
+    width: 290px;
+    left: calc(50% - 145px);
+  }
+  .footer-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .showcase {
+    min-height: 667px;
+  }
+}

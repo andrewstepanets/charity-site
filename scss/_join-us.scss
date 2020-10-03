@@ -1,0 +1,21 @@
+.join-us {
+  margin: 60px 0;
+  min-height: 440px;
+}
+.join-us-container {
+  display: flex;
+  background: $dark-blue;
+}
+.join-us-img-container {
+  width: 50%;
+  background: url('../img/join-us.jpg') no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+.join-us-cta {
+  padding: 30px;
+  width: 50%;
+}
+.ctx-title {
+  margin-top: 40px;
+}
