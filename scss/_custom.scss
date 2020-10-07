@@ -4,13 +4,21 @@
     background-size: cover;
     background-position: bottom center;
   }
-  .join-us-img-container {
-    background: url('../img/join-us@2x.jpg') no-repeat;
-    background-size: cover;
-    background-position: right center;
+}
+@media only screen and (max-width: 1080px) {
+  .icons-wrapper {
+    justify-content: center;
+  }
+  .icon-container {
+    flex-basis: 30%;
   }
 }
 @media only screen and (max-width: 1024px) {
+  .wrapper {
+    margin-bottom: 0px;
+    box-shadow: none;
+    border: none;
+  }
   .btn-menu {
     display: block;
     margin-left: 10px;
@@ -104,8 +112,20 @@
     font-size: 1rem;
     line-height: 1.5;
   }
+
   .icon-container {
     flex-basis: 30%;
+  }
+  // section Age
+  .age-wrapper {
+    height: 450px;
+  }
+  // section about
+  .about-title {
+    padding-top: 40px;
+  }
+  .about-text {
+    padding: 30px;
   }
 }
 
@@ -119,18 +139,6 @@
   .logo-img-mobile {
     display: inline-block;
   }
-  .showcase {
-    min-height: 500px;
-  }
-  .contact-list {
-    li {
-      padding: 30px 0;
-    }
-    h2 {
-      font-size: 2rem;
-    }
-  }
-
   .title {
     font-size: 1.5rem;
     font-weight: 900;
@@ -160,8 +168,43 @@
     border-bottom: 3px solid $light-blue;
     padding-bottom: 10px;
   }
-  .age {
-    min-height: 400px;
+  .showcase {
+    min-height: 500px;
+    .ctx-title {
+      padding-top: 40px;
+    }
+    .ctx-text {
+      padding-bottom: 20px;
+    }
+  }
+
+  .icons-wrapper {
+    justify-content: space-between;
+  }
+
+  .contact-list {
+    li {
+      padding: 30px 0;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .age-wrapper {
+    height: 320px;
+  }
+  .age-img {
+    margin-bottom: 0;
+  }
+  .about {
+    height: 280px;
+  }
+  .about-title {
+    padding-top: 10px;
+  }
+  .about-text {
+    padding: 10px;
   }
   .slider {
     height: 447px;
@@ -173,11 +216,19 @@
     width: 484px;
     left: calc(50% - 242px);
   }
-  .join-us {
-    min-height: 340px;
+
+  .join-us-container {
+    flex-direction: column;
+    align-items: center;
   }
-  .join-us-img-container {
-    display: none;
+  .join-us-img {
+    order: 3;
+    width: 80%;
+    display: block;
+    margin-top: 60px;
+    border: 10px solid white;
+    box-shadow: 2px 2px 5px $grey;
+    border-radius: 5px;
   }
   .join-us-cta {
     padding: 30px;
@@ -186,19 +237,82 @@
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 720px) {
+  .icons-wrapper {
+    justify-content: center;
+  }
+  .icons-wrapper {
+    padding: 20px 0;
+  }
+  .icon-container {
+    flex-basis: 50%;
+  }
+  .about-wrapper {
+    width: 90%;
+  }
+  .about-title {
+    padding-top: 10px;
+  }
+  .about-text {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .icon-container {
+    padding: 10px 15px;
+  }
+}
+@media only screen and (max-width: 499px) {
   .icon-container {
     flex-basis: 100%;
   }
-  .age {
-    min-height: 300px;
+}
+
+@media only screen and (max-width: 414px) {
+  .header-wrap {
+    padding-top: 30px;
   }
+  .btn {
+    padding: 12px 12px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: white;
+  }
+  .showcase {
+    .ctx {
+      width: 47%;
+    }
+  }
+  .icon-container {
+    flex-basis: 100%;
+  }
+
   .age-wrapper {
     margin-top: 35px;
     width: calc(100% - 2 * (100% / 12));
+    height: 100%;
+  }
+  .container-img-block {
+    margin-bottom: -5px;
+    // img {
+    //   width: 300px;
+    //   height: 73px;
+    // }
+  }
+  .about {
+    height: 260px;
+  }
+  .about-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  .about-text {
+    margin-bottom: 10px;
   }
   .slider {
     height: 240px;
+    margin-bottom: 40px;
   }
   .slider-wrapper {
     height: 204px;
@@ -215,5 +329,10 @@
 @media only screen and (max-width: 375px) {
   .showcase {
     min-height: 667px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .showcase {
+    min-height: 568px;
   }
 }

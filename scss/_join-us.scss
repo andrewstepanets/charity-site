@@ -1,21 +1,31 @@
 .join-us {
-  margin: 60px 0;
-  min-height: 440px;
+  margin-bottom: 64px;
 }
 .join-us-container {
+  // background: $dark-blue;
   display: flex;
-  background: $dark-blue;
 }
-.join-us-img-container {
+
+.join-us-img {
   width: 50%;
-  background: url('../img/join-us.jpg') no-repeat;
-  background-size: cover;
-  background-position: right center;
+  height: auto;
+  order: 1;
 }
 .join-us-cta {
-  padding: 30px;
-  width: 50%;
-}
-.ctx-title {
-  margin-top: 40px;
+  background: $dark-blue;
+  padding: 35px 54px 35px 40px;
+  order: 2;
+  .cta-title {
+    padding: 30px 0;
+    letter-spacing: 2px;
+  }
+  .underline {
+    padding-bottom: 10px;
+  }
+  .cta-text {
+    padding-bottom: 40px;
+  }
+  .btn-cta {
+    padding: 20px 28px;
+  }
 }

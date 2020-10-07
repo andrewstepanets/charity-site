@@ -1,18 +1,29 @@
 .age {
-  min-height: 600px;
   background: $light-blue;
-  display: flex;
-  justify-content: center;
 }
 .age-wrapper {
-  margin-top: 100px;
-  width: calc(100% - 2 * (100% / 12));
-  max-width: 1280px;
-
-  background: url('../img/bg_age.svg') no-repeat;
-  background-position: bottom center;
-  background-size: contain;
+  height: 500px;
+  margin: auto;
 }
 .age-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.container-text-block {
   text-align: center;
+}
+.age-title {
+  font-size: 3.5rem;
+  letter-spacing: 0.7px;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+.age-img {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin-bottom: -15px;
 }

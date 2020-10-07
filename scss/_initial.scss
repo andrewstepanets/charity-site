@@ -7,10 +7,15 @@
 }
 
 .wrapper {
-  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
   overflow: hidden;
   min-height: 100%;
   color: white;
+  border: 1px solid $light-grey;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px $light-grey;
 }
 ul {
   list-style: none;
@@ -21,16 +26,15 @@ a {
 .title {
   font-size: 3.4rem;
   font-weight: 900;
-  margin-bottom: 40px;
+  letter-spacing: 1px;
 }
 .info-text {
   font-size: 1.3rem;
-  line-height: 2;
-  margin-bottom: 40px;
+  line-height: 1.6;
 }
 .btn {
   display: inline-block;
-  padding: 1.5rem 4rem;
+  padding: 20px 66px;
   font-size: 1.4rem;
   text-transform: uppercase;
   color: white;
@@ -45,8 +49,9 @@ a {
 }
 .underline {
   border-bottom: 5px solid $light-blue;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 }
 .slogan {
+  letter-spacing: 1.8px;
   font-style: italic;
 }

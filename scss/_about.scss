@@ -1,12 +1,12 @@
 .about {
-  min-height: 360px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 362px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 }
 .about-wrapper {
   width: calc(100% - 4 * (100% / 12));
-  margin: 50px 0;
+  margin: auto;
 }
 .about-container {
   text-align: center;
@@ -15,7 +15,12 @@
   font-size: 1.7rem;
   font-weight: 700;
   color: $grey;
+  padding-top: 68px;
 }
 .about-text {
   color: $middle-grey;
+  padding: 30px 30px 10px;
+}
+.btn-about {
+  padding: 18px 82px;
 }

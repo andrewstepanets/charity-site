@@ -1,11 +1,22 @@
 .showcase {
   background: url('../img/main.jpg') bottom center/cover no-repeat;
-  min-height: 600px;
+  min-height: 660px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   .ctx {
-    width: 45%;
+    width: 42%;
     padding-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ctx-title {
+    padding: 110px 0 35px;
+    text-shadow: 1px 1px 0px $middle-grey;
+    opacity: 0;
+  }
+  .ctx-text {
+    padding-bottom: 40px;
+    text-shadow: 1px 1px 0px $middle-grey;
   }
 }
